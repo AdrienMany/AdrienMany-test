@@ -38,7 +38,7 @@
         cursor: pointer;
     }
     .article-title {
-        font-family: Source Sans Pro,sans-serif;
+        font-family: Source Sans Pro, sans-serif;
         font-size: 22px;
         line-height: 1.25;
         font-weight: 700;
