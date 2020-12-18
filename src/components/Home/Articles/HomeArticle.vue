@@ -46,7 +46,7 @@
         color: rgb(50, 50, 50);
         padding: 10px 15px;
     }
-    .article-title:hover {
+    .article-container:hover .article-title {
         color: #14f032;
         transition: all .25s;
     }
