@@ -53,4 +53,14 @@
     .article-container:hover /deep/ .thumbnail-image {
         transform: scale3d(1.1,1.1,1.1);
     }
+    @media screen and (max-width: 1160px) {
+        .article-container {
+            width: calc(50vw - 30px);
+        }
+    }
+    @media screen and (max-width: 720px) {
+        .article-container {
+            width: 100%;
+        }
+    }
 </style>

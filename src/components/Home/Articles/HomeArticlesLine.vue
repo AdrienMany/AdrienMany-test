@@ -47,8 +47,14 @@
 <style scoped>
     .articles-list-container {
         width: 1140px;
-        margin: 30px auto;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
+    }
+    @media screen and (max-width: 1160px) {
+        .articles-list-container {
+            width: 100%;
+            flex-wrap: wrap;
+        }
     }
 </style>
