@@ -35,6 +35,7 @@
         },
         methods: {
             thumbnailImageSize(articleUrl) {
+                // FORMAT IMG URL FOR THUMBNAIL SIZE
                 return articleUrl.replace('{size}', 'thumb');
             },
         },
@@ -62,6 +63,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform .25s,opacity .2s,-webkit-transform .25s;
+        transition: transform .25s, opacity .2s, -webkit-transform .25s;
     }
 </style>

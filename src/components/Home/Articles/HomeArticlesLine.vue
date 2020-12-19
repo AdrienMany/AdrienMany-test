@@ -1,5 +1,6 @@
 <template>
     <section class="articles-list-container">
+        <!-- TODO : ADD LOADER V-IF ARTICLES ARE NULL -->
         <HomeArticle
                 v-for="(article, index) in articles"
                 :article="article"
@@ -31,13 +32,14 @@
             fetchArticles() {
                 axios.get(this.apiUrl)
                     .then(response => {
+                        // TODO : ADD LOADER BEFORE DATA ARE SET
                         this.articles = response.data.items.slice(0, 3);
                     })
                     .catch(error => {
                         console.log(error);
                     })
                     .then(() => {
-
+                        // TODO : DISPLAY ERROR MESSAGE
                     })
             },
         }

@@ -1,14 +1,14 @@
 <template>
     <article class="article-container">
-        <a :href="article.URL" class="article-title">
-            {{ article.title }}
-        </a>
-        <p>{{ article.lead }}</p>
         <HomeArticleSmallThumbnail
                 :thumbnail="article.thumbnail"
                 :folder="article.folder"
                 :date="article.date.modified"
         ></HomeArticleSmallThumbnail>
+        <a :href="article.URL" class="article-title">
+            {{ article.title }}
+        </a>
+        <p>{{ article.lead }}</p>
     </article>
 </template>
 

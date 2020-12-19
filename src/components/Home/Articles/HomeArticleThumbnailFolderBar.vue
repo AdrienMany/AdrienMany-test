@@ -33,23 +33,28 @@
                 const date = Date.parse(this.date);
                 const seconds = Math.floor((new Date() - date) / 1000);
 
+                // SECONDS / EQUIVALENT OF ONE YEAR
                 let interval = seconds / 31536000;
 
                 if (interval > 1) {
                     return this.formatDateDifference(date, "an");
                 }
+                // SECONDS / EQUIVALENT OF ONE MONTH
                 interval = seconds / 2592000;
                 if (interval > 1) {
                     return this.formatDateDifference(interval, "mois");
                 }
+                // SECONDS / EQUIVALENT OF ONE DAY
                 interval = seconds / 86400;
                 if (interval > 1) {
                     return this.formatDateDifference(interval, "jour");
                 }
+                // SECONDS / EQUIVALENT OF ONE HOUR
                 interval = seconds / 3600;
                 if (interval > 1) {
                     return this.formatDateDifference(interval, "heure");
                 }
+                // SECONDS / EQUIVALENT OF ONE MINUTE
                 interval = seconds / 60;
                 if (interval > 1) {
                     return this.formatDateDifference(interval, "minute");
@@ -60,8 +65,10 @@
         methods: {
             formatDateDifference(date, stamp) {
                 if (Math.floor(date) > 1 && stamp !== "mois") {
+                    // PLURAL
                     return "Il y a " + Math.floor(date) + " " + stamp + "s";
                 } else {
+                    // SINGULAR
                     return "Il y a " + Math.floor(date) + " " + stamp;
                 }
             }
