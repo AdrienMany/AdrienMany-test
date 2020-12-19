@@ -51,7 +51,7 @@
         transition: all .25s;
     }
     .article-container:hover /deep/ .thumbnail-image {
-        transform: scale3d(1.1,1.1,1.1);
+        transform: scale(1.1);
     }
     @media screen and (max-width: 1160px) {
         .article-container {

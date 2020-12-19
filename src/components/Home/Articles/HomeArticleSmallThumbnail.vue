@@ -51,7 +51,9 @@
         background: #b9b9b9;
         pointer-events: none;
         overflow: hidden;
-        border-radius: 30px;
+        border-radius: 30px 30px 30px 0;
+        -webkit-border-radius: 30px 30px 30px 0;
+        -moz-border-radius: 30px 30px 30px 0;
     }
     .thumbnail-image {
         position: absolute;

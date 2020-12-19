@@ -78,7 +78,6 @@
         height: 34px;
         background: rgba(50,50,50,.7);
         backdrop-filter: blur(10px) saturate(300%);
-        border-radius: 0;
         overflow: hidden;
         padding: 0 25px 0 0;
         display: flex;
@@ -106,7 +105,6 @@
         width: 30px;
         height: 1px;
         background: #14f032;
-        -webkit-transition: width .25s;
         transition: width .25s;
         pointer-events: none;
     }
